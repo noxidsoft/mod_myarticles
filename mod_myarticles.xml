@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension
 	type="module"
-	version="2.5"
+	version="3.1"
 	client="site"
 	method="upgrade">
 	<name>My Articles - List of my Articles</name>
 	<author>&lt;a href='http://www.noxidsoft.com/' target='blank' style=''&gt;&lt;b&gt;Noxidsoft - Noel Dixon&lt;/b&gt;&lt;/a&gt;</author>
-	<creationDate>July 2013</creationDate>
-	<copyright>Copyright (C) 2007 - 2013 Noxidsoft. All rights reserved.</copyright>
+	<creationDate>August 2014</creationDate>
+	<copyright>Copyright (C) 2007 - 2014 Noxidsoft. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>admin@noxidsoft.com</authorEmail>
 	<authorUrl>www.noxidsoft.com</authorUrl>
-	<version>2.5.11</version>
+	<version>3.3.24</version>
 	<description>MOD_MYARTICLES_XML_DESCRIPTION</description>
-	
+
 	<files>
 		<filename module="mod_myarticles">mod_myarticles.php</filename>
-		<folder>assets</folder>
 		<folder>tmpl</folder>
 		<folder>language</folder>
 		<filename>helper.php</filename>
@@ -27,7 +26,7 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				
+
 				<field
 					name="switch_mode"
 					type="radio"
@@ -39,19 +38,19 @@
 					<option
 						value="0">MOD_MYARTICLES_FIELD_ACCESS_ON</option>
 				</field>
-				
+
 				<field
 					name="subheading_line_color"
 					type="text"
 					default="#E6E6E7"
 					label="MOD_MYARTICLES_FIELD_SUBHEADING_LABEL"
 					description="MOD_MYARTICLES_FIELD_SUBHEADING_DESC" />
-					
+
 					<field name="excluded_articles" type="textarea"
 					cols="10" rows="3"
 					label="MOD_ARTICLES_CATEGORY_FIELD_EXCLUDEDARTICLES_LABEL"
 					description="MOD_ARTICLES_CATEGORY_FIELD_EXCLUDEDARTICLES_DESC" />
-					
+
 			</fieldset>
 
 			<fieldset
@@ -99,4 +98,10 @@
 			</fieldset>
 		</fields>
 	</config>
+
+	<!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+	        <!-- Note: No spaces or linebreaks allowed between the server tags -->
+	        <server type="extension" priority="1" name="My Articles Update Site">http://www.noxidsoft.com/otherApps/jupdates/myarticles-update.xml</server>
+	</updateservers>
 </extension>
